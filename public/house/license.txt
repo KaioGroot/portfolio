@@ -1,0 +1,11 @@
+Model Information:
+* title:	A house in the middle of the ocean, a dream...
+* source:	https://sketchfab.com/3d-models/a-house-in-the-middle-of-the-ocean-a-dream-8f66810fef0d4652be53e06d656d7003
+* author:	M4X1M (https://sketchfab.com/M4X1M)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "A house in the middle of the ocean, a dream..." (https://sketchfab.com/3d-models/a-house-in-the-middle-of-the-ocean-a-dream-8f66810fef0d4652be53e06d656d7003) by M4X1M (https://sketchfab.com/M4X1M) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

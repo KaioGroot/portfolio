@@ -1,0 +1,52 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "name": "SaaS - Gerador de Copy Persuasiva",
+            "description": "Uma aplicação SaaS construída com React e Next.js que gera textos de marketing persuasivos para campanhas publicitárias.",
+            "technologies": ["React", "Next.js", "TailwindCSS", "MuxPlayer", "Stripe"],
+            "category": "Marketing e SaaS",
+            "repo": "https://github.com/KaioGroot/saas"
+        },
+        {
+            "id": 2,
+            "name": "Draw - Aplicação de Desenho",
+            "description": "Uma aplicação interativa de desenho criada com Konva.js, React e Next.js, permitindo ao usuário criar e editar desenhos diretamente no navegador.",
+            "technologies": ["Konva.js", "React", "Next.js", "TailwindCSS"],
+            "category": "Design e Interatividade",
+            "repo": "https://github.com/KaioGroot/saas"
+        },
+        {
+            "id": 3,
+            "name": "Plataforma de Resolução de Questões",
+            "description": "Uma plataforma desenvolvida em PHP que permite a resolução de questões acadêmicas, integrando pagamento via Stripe e funcionalidade dinâmica com JavaScript.",
+            "technologies": ["PHP", "Stripe", "JavaScript", "MySQL", "TailwindCSS"],
+            "category": "Educação e Pagamentos",
+            "repo": "https://github.com/KaioGroot/saas"
+        },
+        {
+            "id": 4,
+            "name": "Simples Clonador de website",
+            "description": "Uma ferramenta simples para clonar um website usando Python, BeautifulSoup e Requests. bom, ela consegue baixar os arquivos do site no seu computador com base no nome que você queira salvar.",
+            "technologies": ["Python", "BeautifulSoup", "Requests"],
+            "category": "Educação e Pagamentos",
+            "repo": "https://github.com/KaioGroot/saas"
+        },
+        {
+            "id": 5,
+            "name": "Botspar 2.0 / bot de música Discord",
+            "description": "Um simples bot onde toca música do youtube com base no link fornecido utilizando ffmpeg.",
+            "technologies": ["Python", "ffmpeg", "Requests"],
+            "category": "Educação e Pagamentos",
+            "repo": "https://github.com/KaioGroot/saas"
+        },
+        {
+            "id": 6,
+            "name": "Found My Pet",
+            "description": "Um site onde pessoas cadastram o seu pet perdido e outros cadastrados o encontram.",
+            "technologies": ["React", "Next.js", "TailwindCSS", "Firebase"],
+            "category": "Educação e Pagamentos",
+            "repo": "https://github.com/KaioGroot/found_my_pet"
+        }
+    ]
+}

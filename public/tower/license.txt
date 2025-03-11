@@ -1,0 +1,11 @@
+Model Information:
+* title:	tower
+* source:	https://sketchfab.com/3d-models/tower-0d471b16509f430687fc0cc715e9a002
+* author:	paubr89 (https://sketchfab.com/paubr89)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "tower" (https://sketchfab.com/3d-models/tower-0d471b16509f430687fc0cc715e9a002) by paubr89 (https://sketchfab.com/paubr89) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
