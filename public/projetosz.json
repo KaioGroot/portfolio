@@ -6,7 +6,7 @@
             "description": "Uma aplicação SaaS construída com React e Next.js que gera textos de marketing persuasivos para campanhas publicitárias.",
             "technologies": ["React", "Next.js", "TailwindCSS", "MuxPlayer", "Stripe"],
             "category": "Marketing e SaaS",
-            "repo": "https://github.com/KaioGroot/saas"
+            "repo": "https://github.com/KaioGroot/saas-projeto-generatecopywithai"
         },
         {
             "id": 2,
@@ -14,7 +14,7 @@
             "description": "Uma aplicação interativa de desenho criada com Konva.js, React e Next.js, permitindo ao usuário criar e editar desenhos diretamente no navegador.",
             "technologies": ["Konva.js", "React", "Next.js", "TailwindCSS"],
             "category": "Design e Interatividade",
-            "repo": "https://github.com/KaioGroot/saas"
+            "repo": "https://github.com/KaioGroot/draw-com-konva-nextjs"
         },
         {
             "id": 3,
