@@ -5,19 +5,26 @@ import { ThemeContext } from '@/context/ThemeProvider';
 import { Eclipse, Menu, X } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import AudioPlayer from './audioplayer';
+import LanguageSelector from './LanguageSelector';
+import { useLanguage } from '@/context/LanguageProvider';
 
 export default function Navbar() {
     const router = useRouter();
     const navigation = ['About', 'Projects', 'Contact'];
     const { ativo, setAtivo } = useContext(AtivoContext);
     const { theme, setTheme } = useContext(ThemeContext);
+    const { language } = useLanguage();
     const [menuOpen, setMenuOpen] = useState(false);
+
+    const messages = require(`../../messages/${language}.json`);
 
     return (
         <div className="navbar px-6 z-20 md:px-20 py-6 md:py-12 flex justify-between items-center bg-gradient-to-tr from-[rgba(38,107,255,0)] to-[#6c757d00] backdrop-blur-xl relative">
             <div id="logo" className="flex gap-2 items-center">
-                <AudioPlayer />
-                <span className="text-2xl md:text-4xl font-bold tracking-widest">KaiowF.dev</span>
+                <div className="flex gap-2 items-center cursor-pointer" onClick={() => router.push('/')}>
+                    <AudioPlayer />
+                    <span className="text-2xl md:text-4xl font-bold tracking-widest">KaiowF.dev</span>
+                </div>
             </div>
 
             {/* Botão de Menu para Mobile */}
@@ -42,9 +49,10 @@ export default function Navbar() {
                             router.push(`${item.toLowerCase()}`);
                         }}
                     >
-                        {item}
+                        {messages.nav[item.toLowerCase()]}
                     </a>
                 ))}
+                <LanguageSelector />
                 <button
                     id="tema"
                     className="bg-transparent rounded-full p-2 hover:bg-gray-500 transition"

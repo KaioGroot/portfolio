@@ -1,0 +1,43 @@
+{
+    "home": {
+        "greeting": "Hi, I'm Kaio Ferreira",
+        "description": "I'm a front-end developer passionate about creating amazing and intuitive user experiences. My focus is on building modern and responsive interfaces using the latest web technologies.",
+        "projects_button": "My Projects",
+        "cv_button": "Resume",
+        "see_more": "See More about me"
+    },
+    "about": {
+        "title": "About me",
+        "cv": {
+            "download": "Download CV",
+            "view": "View CV"
+        },
+        "timeline": {
+            "2020": {
+                "title": "The Beginning",
+                "description": "Well, when I was about 13 years old, I started to notice the digital world. I would visit a website and think: okay, how is a website made? How do things work behind the scenes? Then I came across that name you know: Curso Em Video! That's right, from there I started studying HTML5 and CSS3."
+            },
+            "2021": {
+                "title": "Learning Improvement",
+                "description": "In 2021, I already had a basic understanding of how it worked. I created very simple pages, I would see a photo and try to replicate it, and from there I kept evolving. I also tried to do projects without watching YouTube videos, which made it quite difficult but also helped me a lot because of learning on my own."
+            },
+            "2022": {
+                "title": "The Contact",
+                "description": "Well, this is known as: The Contact, because of my first contact with JavaScript. I remember it like it was yesterday, always super excited to learn. From there, I started solving basic programming problems. And my practices with HTML and CSS were pretty good, I could replicate any type of website, well, of course not as functional because they were simple, but I could do it."
+            },
+            "2023": {
+                "title": "Shooting for Other Sides",
+                "description": "This was a year when I wasn't so focused on JavaScript, I also tried PHP! And it was awesome! I managed to make a website that did registration and login in a game that worked on my computer, as its databases were in SQL, so it was easier to do, but of course, it was a challenge, I didn't know anything about PHP."
+            },
+            "2024": {
+                "title": "Modern Technologies",
+                "description": "Well, in 2024 I got a new PC, and then I managed to improve my skills with some more modern technologies like ReactJS. I studied for a few months with this technology, and I managed to learn a lot with it, as well as other knowledge like TailwindCSS, Animate.css Scroll Driven and others."
+            }
+        }
+    },
+    "nav": {
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact"
+    }
+}

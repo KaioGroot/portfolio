@@ -1,0 +1,43 @@
+{
+    "home": {
+        "greeting": "Olá, Me Chamo Kaio Ferreira",
+        "description": "sou um desenvolvedor front-end apaixonado por criar experiências de usuário incríveis e intuitivas. Meu foco é em construir interfaces modernas e responsivas usando as mais recentes tecnologias web.",
+        "projects_button": "Meus Projetos",
+        "cv_button": "Currículo",
+        "see_more": "Veja Mais sobre mim"
+    },
+    "about": {
+        "title": "Sobre mim",
+        "cv": {
+            "download": "Download CV",
+            "view": "Visualizar CV"
+        },
+        "timeline": {
+            "2020": {
+                "title": "O Início",
+                "description": "Bom, com mais ou menos 13 anos de idade eu comecei a perceber sobre o mundo digital, eu entrava em um site pensava: ok, como um site é feito? como que funcionam as coisas por trás dos panos?, então eu me deparei com aquele nome que você conhece: Curso Em Video!, isso mesmo a partir daí comecei estudando HTML5 e CSS3."
+            },
+            "2021": {
+                "title": "Melhora do Aprendizado",
+                "description": "em 2021 eu já tinha uma básica noção de como funcionava, eu criava páginas bem simples mesmo, eu via uma foto e tentava replicar e daí fui evoluindo, também eu tentava fazer projetos sem ver vídeos no youtube, isso dificultou bastante mas também me ajudou muito por conta de aprender sozinho"
+            },
+            "2022": {
+                "title": "O Contato",
+                "description": "bom, aqui é batizado como: O Contado, por conta do meu primeiro contato com javacsript, lembro como se fosse ontem, sempre super empolgado em sempre aprender, daí fui solucionando problemas básicos de programação. e minhas práticas com HTML e CSS estávam bem legais, eu conseguia replicar qualquer tipo de site, bom, claro que não tão funcionais por ser simples, mas eu conseguia."
+            },
+            "2023": {
+                "title": "Atirando para outros lados",
+                "description": "Aqui foi um ano que eu não fiquei tão focado em javascript, eu também atirei pro php!, e foi muito irado! eu consegui fazer um site que fazia cadastro e login em um joguinho que funcionava no meu computador, pois os bancos de dados dele eram em sql, daí foi mais fácil de fazer, mas claro, foi um desafio, eu nem sabia nada de php."
+            },
+            "2024": {
+                "title": "Atirando para outros lados",
+                "description": "Bom, no ano de 2024 eu consegui pegar um pc novo, e então eu consegui melhorar minhas habilidades com algumas tecnologias mais modernas como, ReactJS, bom eu estudei por alguns meses com essa tecnologia, e eu consegui aprender muito com ela, assim como outros conhecimentos como TailwindCSS, Animate.css Scroll Driven e outros."
+            }
+        }
+    },
+    "nav": {
+        "about": "Sobre",
+        "projects": "Projetos",
+        "contact": "Contato"
+    }
+}

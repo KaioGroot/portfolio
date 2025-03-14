@@ -10,10 +10,13 @@ import { useContext } from 'react';
 import Contact from '@/components/contact';
 import { Document, Page } from 'react-pdf';
 import ThreeScene from '@/action/threescene';
+import { useLanguage } from '@/context/LanguageProvider';
 
 export default function Home() {
     let { ativo, setAtivo } = useContext(AtivoContext);
     let { theme, setTheme } = useContext(ThemeContext);
+    const { language } = useLanguage();
+    const messages = require(`../../messages/${language}.json`);
 
     useEffect(() => {
         let movimentando = document.getElementById('movimentando');
@@ -45,18 +48,17 @@ export default function Home() {
             </div>
 
             <div className="min-h-screen flex flex-col items-left px-40 justify-center gap-20 bg-transparent text-white">
-                <h1 className="kaio text-6xl font-bold mb-4">Olá, Me Chamo Kaio Ferreira</h1>
+                <h1 className="kaio text-6xl font-bold mb-4">{messages.home.greeting}</h1>
                 <p className="text-xl opacity-80 mb-6 text-left max-w-2xl animate__animated animate__fadeInDown duration-[2323s]">
-                    sou um desenvolvedor front-end apaixonado por criar experiências de usuário incríveis e intuitivas. Meu foco é em construir
-                    interfaces modernas e responsivas usando as mais recentes tecnologias web.
+                    {messages.home.description}
                 </p>
 
                 <div className="flex gap-4 animate__animated animate__fadeInDown">
                     <a href="#projects" className="bg-white text-blue-500 px-6 py-3 rounded-lg font-semibold hover:bg-blue-100 transition">
-                        Meus Projetos
+                        {messages.home.projects_button}
                     </a>
                     <a href="#contact" className="bg-white text-blue-500 px-6 py-3 rounded-lg font-semibold hover:bg-blue-100 transition">
-                        Currículo
+                        {messages.home.cv_button}
                     </a>
                 </div>
                 <div className="flex gap-0 animate__animated animate__backInLeft">
@@ -76,7 +78,7 @@ export default function Home() {
                 {ativo ? <Contact /> : null}
 
                 <div className="absolute flex gap-4 justify-between bottom-10 text-sm">
-                    <p>Veja Mais sobre mim</p>
+                    <p>{messages.home.see_more}</p>
                     <div className="animate__animated animate__flash animate__infinite ">
                         <ArrowRight />
                     </div>

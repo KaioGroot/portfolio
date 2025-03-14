@@ -7,6 +7,7 @@ import { AtivoProvider } from '@/context/AtivoProvider';
 import ThemeProvider from '@/context/ThemeProvider';
 import { useContext } from 'react';
 import { ThemeContext } from '@/context/ThemeProvider';
+import { LanguageProvider } from '@/context/LanguageProvider';
 
 const geistSans = Geist({
     variable: '--font-geist-sans',
@@ -27,11 +28,13 @@ export default function RootLayout({ children }) {
 
             <body className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}>
                 <ThemeProvider>
-                    <AtivoProvider>
-                        <Navbar />
-                        {children}
-                        <MouseFollower />
-                    </AtivoProvider>
+                    <LanguageProvider>
+                        <AtivoProvider>
+                            <Navbar />
+                            {children}
+                            <MouseFollower />
+                        </AtivoProvider>
+                    </LanguageProvider>
                 </ThemeProvider>
                 <script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
             </body>
