@@ -11,6 +11,7 @@ import Contact from '@/components/contact';
 import { Document, Page } from 'react-pdf';
 import ThreeScene from '@/action/threescene';
 import { useLanguage } from '@/context/LanguageProvider';
+import ScrollAnimation from '@/components/ScrollAnimation';
 
 export default function Home() {
     let { ativo, setAtivo } = useContext(AtivoContext);
@@ -47,39 +48,58 @@ export default function Home() {
                 <div className="h-4/5 w-full bg-gradient-to-t from-transparent to-[rgba(38,107,255,0.2)]"></div>
             </div>
 
-            <div className="min-h-screen flex flex-col items-left px-40 justify-center gap-20 bg-transparent text-white">
-                <h1 className="kaio text-6xl font-bold mb-4">{messages.home.greeting}</h1>
-                <p className="text-xl opacity-80 mb-6 text-left max-w-2xl animate__animated animate__fadeInDown duration-[2323s]">
-                    {messages.home.description}
-                </p>
+            <div className="min-h-screen flex flex-col items-left px-6 sm:px-10 md:px-20 lg:px-40 justify-center gap-8 md:gap-20 bg-transparent text-white">
+                <ScrollAnimation animation="fadeInDown">
+                    <h1 className="kaio text-4xl sm:text-5xl md:text-6xl font-bold mb-4">{messages.home.greeting}</h1>
+                </ScrollAnimation>
 
-                <div className="flex gap-4 animate__animated animate__fadeInDown">
-                    <a href="#projects" className="bg-white text-blue-500 px-6 py-3 rounded-lg font-semibold hover:bg-blue-100 transition">
-                        {messages.home.projects_button}
-                    </a>
-                    <a href="#contact" className="bg-white text-blue-500 px-6 py-3 rounded-lg font-semibold hover:bg-blue-100 transition">
-                        {messages.home.cv_button}
-                    </a>
-                </div>
-                <div className="flex gap-0 animate__animated animate__backInLeft">
-                    <a
-                        href="https://github.com/KaioGroot"
-                        className="bg-transparent text-blue-200 px-6 py-3 rounded-lg font-semibold hover:bg-blue-400 transition"
-                    >
-                        <Github size={24} />
-                    </a>
-                    <a
-                        href="https://www.instagram.com/kaiowdev/"
-                        className="bg-transparent text-blue-200 px-6 py-3 rounded-lg font-semibold hover:bg-blue-400 transition"
-                    >
-                        <Instagram size={24} />
-                    </a>
-                </div>
+                <ScrollAnimation animation="fadeInUp">
+                    <p className="text-base sm:text-lg md:text-xl opacity-80 mb-6 text-left max-w-2xl">{messages.home.description}</p>
+                </ScrollAnimation>
+
+                <ScrollAnimation animation="fadeInLeft">
+                    <div className="flex flex-col sm:flex-row gap-4">
+                        <a
+                            href="#projects"
+                            className="w-full sm:w-auto text-center bg-white text-blue-500 px-6 py-3 rounded-lg font-semibold hover:bg-blue-100 transition"
+                        >
+                            {messages.home.projects_button}
+                        </a>
+                        <a
+                            href="#contact"
+                            className="w-full sm:w-auto text-center bg-white text-blue-500 px-6 py-3 rounded-lg font-semibold hover:bg-blue-100 transition"
+                        >
+                            {messages.home.cv_button}
+                        </a>
+                    </div>
+                </ScrollAnimation>
+
+                <ScrollAnimation animation="fadeInRight">
+                    <div className="flex justify-center sm:justify-start gap-4">
+                        <a
+                            href="https://github.com/KaioGroot"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-transparent text-blue-200 p-3 rounded-lg hover:bg-blue-400 transition"
+                        >
+                            <Github size={24} />
+                        </a>
+                        <a
+                            href="https://www.instagram.com/kaiowdev/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-transparent text-blue-200 p-3 rounded-lg hover:bg-blue-400 transition"
+                        >
+                            <Instagram size={24} />
+                        </a>
+                    </div>
+                </ScrollAnimation>
+
                 {ativo ? <Contact /> : null}
 
-                <div className="absolute flex gap-4 justify-between bottom-10 text-sm">
+                <div className="hidden md:flex absolute gap-4 justify-between bottom-10 text-sm">
                     <p>{messages.home.see_more}</p>
-                    <div className="animate__animated animate__flash animate__infinite ">
+                    <div className="animate__animated animate__flash animate__infinite">
                         <ArrowRight />
                     </div>
                 </div>

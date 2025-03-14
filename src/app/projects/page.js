@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Github, Instagram, ArrowRight } from 'lucide-react';
+import { Github, Instagram, ArrowRight, Globe } from 'lucide-react';
 import Theme from '@/action/theme';
 import { ThemeContext } from '@/context/ThemeProvider';
 import ThreeScene from '@/action/threescene';
@@ -84,13 +84,26 @@ export default function Projects() {
                             </p>
                             <p className="text-sm opacity-80 mb-4">Descrição: {project.description + '\n'}</p>
 
-                            <a
-                                href={project.repo}
-                                target="_blank"
-                                className="bg-white text-blue-500 px-4 py-2 rounded-lg font-semibold hover:bg-blue-100 transition flex items-center gap-2"
-                            >
-                                Ver Código <Github size={18} />
-                            </a>
+                            <div className="flex gap-2">
+                                <a
+                                    href={project.repo}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="bg-white text-blue-500 px-4 py-2 rounded-lg font-semibold hover:bg-blue-100 transition flex items-center gap-2"
+                                >
+                                    Ver Código <Github size={18} />
+                                </a>
+                                {project.site && (
+                                    <a
+                                        href={project.site}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="bg-blue-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-600 transition flex items-center gap-2"
+                                    >
+                                        Ver Site <Globe size={18} />
+                                    </a>
+                                )}
+                            </div>
                         </div>
                     ))}
                 </div>
@@ -108,13 +121,26 @@ export default function Projects() {
                             </p>
                             <br />
                             <p className="text-sm opacity-80 mb-4">Descrição: {project.description + '\n'}</p>
-                            <a
-                                href={project.repo}
-                                target="_blank"
-                                className="bg-white text-blue-500 px-4 py-2 rounded-lg font-semibold hover:bg-blue-100 transition flex items-center gap-2"
-                            >
-                                Ver Código <Github size={18} />
-                            </a>
+                            <div className="flex gap-2">
+                                <a
+                                    href={project.repo}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="bg-white text-blue-500 px-4 py-2 rounded-lg font-semibold hover:bg-blue-100 transition flex items-center gap-2"
+                                >
+                                    Ver Código <Github size={18} />
+                                </a>
+                                {project.site && (
+                                    <a
+                                        href={project.site}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="bg-green-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-green-600 transition flex items-center gap-2"
+                                    >
+                                        Ver Site <Globe size={18} />
+                                    </a>
+                                )}
+                            </div>
                         </div>
                     ))}
                 </div>

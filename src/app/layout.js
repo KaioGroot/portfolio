@@ -8,6 +8,7 @@ import ThemeProvider from '@/context/ThemeProvider';
 import { useContext } from 'react';
 import { ThemeContext } from '@/context/ThemeProvider';
 import { LanguageProvider } from '@/context/LanguageProvider';
+import 'animate.css';
 
 const geistSans = Geist({
     variable: '--font-geist-sans',
