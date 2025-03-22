@@ -60,13 +60,13 @@ export default function Home() {
                 <ScrollAnimation animation="fadeInLeft">
                     <div className="flex flex-col sm:flex-row gap-4">
                         <a
-                            href="#projects"
+                            href="/projects"
                             className="w-full sm:w-auto text-center bg-white text-blue-500 px-6 py-3 rounded-lg font-semibold hover:bg-blue-100 transition"
                         >
                             {messages.home.projects_button}
                         </a>
                         <a
-                            href="#contact"
+                            href="/about"
                             className="w-full sm:w-auto text-center bg-white text-blue-500 px-6 py-3 rounded-lg font-semibold hover:bg-blue-100 transition"
                         >
                             {messages.home.cv_button}
